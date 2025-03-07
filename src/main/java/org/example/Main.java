@@ -1,13 +1,16 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 10,b = 20;
-        int c = a + b;
-        int d = a + b;
-        System.out.println(d);
-        System.out.println(c);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first number ");
+        int a =scanner.nextInt();
+        System.out.println("Enter second number ");
+        int b=scanner.nextInt();
+        int largest=a>b?a:b;
+        System.out.println("The larget number is "+largest);
+
         }
     }
